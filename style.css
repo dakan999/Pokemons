@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.pokemon {
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: calc(33.33% - 20px);
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.pokemon:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.pokemon img {
+    max-width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.pokemon-details {
+    background-color: #ccc;
+    border-radius: 3%;
+    flex: 1;
+}
+
+.pokemon-details h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.pokemon-details p {
+    margin: 5px 0;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #ffffff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    max-width: 600px;
+    box-shadow: 20px 24px 8px 0 rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+
+.close {
+    position: fixed;
+    right: 500px;
+    top: 260px;
+    color: #2d2d2d;
+    font-size: 28px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    height: 30px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#modal-content p {
+    background-color: #e1d7d7;
+    height: 20px;
+}
+
+/* Стилизация поля ввода для поиска */
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 50px;
+    z-index: 100;
+}
+#searchInput {
+    
+    width: 500px;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+#searchInput:focus {
+    border-color: #007bff;
+    outline: none;
+}
