@@ -15,7 +15,7 @@ async function fetchData(url) {
 
 async function displayAllPokemons() {
     try {
-        const pokemonResponse = await fetchData('https://pokeapi.co/api/v2/pokemon/?limit=100');
+        const pokemonResponse = await fetchData('https://pokeapi.co/api/v2/pokemon/?limit=2000');
         const pokemons = pokemonResponse.results;
 
         for (const pokemon of pokemons) {
